@@ -46,5 +46,5 @@ if __name__ == "__main__":
   env = os.environ.get("ENV", default="dev")
   setupLogging(logging.INFO)
   logging.info(f'use env {env}')
-  app.run(host='0.0.0.0', debug = env != 'production')
+  app.run(host='0.0.0.0', debug = env != 'prod')
   logging.info(f'start the server done!')
