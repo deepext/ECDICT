@@ -9,10 +9,13 @@ from utils import setupLogging
 from stardict import DictCsv
 
 app = Flask(__name__)
-DICT = DictCsv('/Users/alhuang/work/deepext/ECDICT/ecdict.csv')
+DICT = DictCsv('./ecdict.csv')
 
 def query(word):
-  return DICT.query(word)
+  res = DICT.query(word)
+  res = {} if res is None else res
+  res['query'] = word
+  return res
   
 @app.route('/api/ecdict/status')
 def status():
@@ -29,7 +32,6 @@ def tts():
   res = {}
   res['results'] = results
   res['ok'] = True
-  # res.pop('metrics', None)
   return json.dumps(res), 200, {'content-type':'application/json'}
 
 if __name__ == "__main__":

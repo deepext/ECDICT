@@ -65138,7 +65138,7 @@ butt-weld -> butt-welds
 butt-welding -> butt-weldings
 butter-and-eggs -> butter-and-eggss
 butter-flower -> butter-flowers
-butter-print -> butter-prints
+butter-# print -> butter-prints
 butterball -> butterballs
 butterbean -> butterbeans
 buttercrunch -> buttercrunches
@@ -81703,7 +81703,7 @@ surmounter -> surmounters
 surmullet -> surmullets
 surnia -> surnias
 surplus -> surpluses
-surprint -> surprints
+sur# print -> surprints
 surprisal -> surprisals
 surpriser -> surprisers
 surprisingness -> surprisingnesses
@@ -83824,7 +83824,7 @@ vociferator -> vociferators
 vodoun -> vodouns
 vogul -> voguls
 voicelessness -> voicelessnesses
-voiceprint -> voiceprints
+voice# print -> voiceprints
 voicer -> voicers
 volaille -> volailles
 volapuk -> volapuks

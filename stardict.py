@@ -1709,7 +1709,7 @@ class DictHelper (object):
                         if len(word) == 5 and word[2] == ';':
                             continue
                         if not ord(ch) in (239, 65292):
-                            # print 'f1', ord(ch), word.find(ch)
+                            # # print 'f1', ord(ch), word.find(ch)
                             return False
         if alpha == 0:
             if not word.isdigit():
