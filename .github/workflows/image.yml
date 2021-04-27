@@ -24,9 +24,9 @@ jobs:
       - run: |
           gcloud auth configure-docker -q
 
-      - name: Build be-tts-en image
-        run: docker build . --build-arg ENV=prod --file Dockerfile --tag gcr.io/practical-robot-304901/cheaptts-tts-en:${{steps.vars.outputs.tag}}
+      - name: Build deepext-be-ecdict image
+        run: docker build . --build-arg ENV=prod --file Dockerfile --tag gcr.io/lil-com/deepext-be-ecdict:${{steps.vars.outputs.tag}}
 
-      - name: Push be-tts-en image
+      - name: Push deepext-be-ecdict image
         run: |-
-          docker push gcr.io/practical-robot-304901/cheaptts-tts-en:${{steps.vars.outputs.tag}}
+          docker push gcr.io/lil-com/deepext-be-ecdict:${{steps.vars.outputs.tag}}
