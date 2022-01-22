@@ -30,7 +30,7 @@ def status():
     return json.dumps({'status': True }), 200, {'content-type':'application/json'} 
 
 @app.route('/api/ecdict/query', methods=['GET', 'POST'])
-def tts():
+def query():
   if request.method == 'POST':
     words = request.json['words']
   else:
